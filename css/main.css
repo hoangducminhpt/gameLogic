@@ -125,12 +125,12 @@
 }
 
 .left {
-    max-width: 400px;
+    max-width: 30%;
     float: left;
 }
 
 .right {
-    width: 77%;
+    width: 70%;
     float: right;
     margin-right: 15px;
 }
