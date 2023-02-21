@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
           integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+          integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+          crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -17,7 +19,7 @@
     <div id="game-play"></div>
     <div id="button-start">
         <button id="button-game" onclick="runGame()"><span><i class="fas fa-caret-right"></i>Run</span></button>
-        <button id="button-reset" onclick="resetGame()"><i class="fas fa-redo"></i> Reset</button>
+        <button id="button-reset" onclick="location.reload()"><i class="fas fa-redo"></i> Reset</button>
     </div>
 </div>
 <div class="right">
@@ -31,10 +33,7 @@
                     <img src="img/small_static_avatar.png" style="max-width: 50px;" alt=""/>
                 </div>
                 <div class="speech-bubble">
-                    <p style="margin-top: 10px; margin-left: 10px">Can you help me to catch the naughty pig?
-                        Stack a couple of
-                        "move forward" blocks
-                        together and press "Run" to help me get there.</p>
+                    <p style="margin-top: 10px; margin-left: 10px">Hãy làm sao để tôi đi đến bên con lợn nhanh nhất nhé.</p>
                 </div>
             </div>
 
@@ -54,13 +53,13 @@
         <div id="blocks">
             <ul id="gallery" class="gallery ui-helper-reset ui-helper-clearfix">
                 <li>
-                    <div name = "1" class="block">move forward</div>
+                    <div name="1" class="block">move forward</div>
                 </li>
                 <li>
-                    <div name = "2" class="block">turn left</div>
+                    <div name="2" class="block">turn left</div>
                 </li>
                 <li>
-                    <div name = "3" class="block">turn right</div>
+                    <div name="3" class="block">turn right</div>
                 </li>
             </ul>
         </div>

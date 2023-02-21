@@ -162,16 +162,16 @@ function runGame() {
         callFunction2(copyStartGame);
     }, 450);
 }
-
-function resetGame() {
-    clearWhenRun();
-    resetVariables();
-    // eval() biến chuỗi thành biến
-    gameBoard.level = eval("START_GAME" + (level + 1));
-    x = 100;
-    gameBoard.drawGameBoard(x);
-
-}
+//
+// function resetGame() {
+//     clearWhenRun();
+//     resetVariables();
+//     // eval() biến chuỗi thành biến
+//     gameBoard.level = eval("START_GAME" + (level + 1));
+//     x = 100;
+//     gameBoard.drawGameBoard(x);
+//
+// }
 
 // Hàm làm trắng WHen Run
 function clearWhenRun() {
