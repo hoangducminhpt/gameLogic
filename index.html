@@ -12,20 +12,22 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<nav class="navbar navbar-light bg-light">
-    <span class="navbar-brand mb-0 h1">CodeOrg</span>
-</nav>
+<div align="center">
+<!--    <nav class="navbar navbar-light bg-light">-->
+        <h2>Luyện Tư Duy Logic</h2>
+<!--    </nav>-->
+</div>
 <div class="left">
     <div id="game-play"></div>
     <div id="button-start">
-        <button id="button-game" onclick="runGame()"><span><i class="fas fa-caret-right"></i>Run</span></button>
+        <button id="button-game" onclick="runGame()"><span><i class="fas fa-caret-right"></i> Chạy</span></button>
         <button id="button-reset" onclick="location.reload()"><i class="fas fa-redo"></i> Reset</button>
     </div>
 </div>
 <div class="right">
     <div id="instructions">
         <div id="instructions-header">
-            <span>Instructions</span>
+            <span>Hướng dẫn</span>
         </div>
         <div id="instructions-body">
             <div class="row">
@@ -33,7 +35,8 @@
                     <img src="img/small_static_avatar.png" style="max-width: 50px;" alt=""/>
                 </div>
                 <div class="speech-bubble">
-                    <p style="margin-top: 10px; margin-left: 10px">Hãy làm sao để tôi đi đến bên con lợn nhanh nhất nhé.</p>
+                    <p style="margin-top: 10px; margin-left: 10px">Hãy giúp tôi đi đến bên con lợn xanh kia
+                        nhé.</p>
                 </div>
             </div>
 
@@ -42,10 +45,10 @@
     <table class="game-play-header">
         <tr>
             <td id="blocks-header" class="text-center">
-                Blocks
+                Hành động
             </td>
             <td id="work-space-header" class="text-center">
-                Workspace
+                Hành động sẽ làm
             </td>
         </tr>
     </table>
@@ -53,20 +56,20 @@
         <div id="blocks">
             <ul id="gallery" class="gallery ui-helper-reset ui-helper-clearfix">
                 <li>
-                    <div name="1" class="block">move forward</div>
+                    <div name="1" class="block">Đi về phía trước</div>
                 </li>
                 <li>
-                    <div name="2" class="block">turn left</div>
+                    <div name="2" class="block">Quay bên trái</div>
                 </li>
                 <li>
-                    <div name="3" class="block">turn right</div>
+                    <div name="3" class="block">Quay bên phải</div>
                 </li>
             </ul>
         </div>
         <div id="work-space">
             <div id="play">
                 <div class="play-block" id="begin-block">
-                    <p class="block-content">when run</p>
+                    <p class="block-content">Bắt đầu</p>
                 </div>
             </div>
         </div>
@@ -88,3 +91,4 @@
 <script src="js/main.js"></script>
 </body>
 </html>
+

@@ -61,7 +61,6 @@ function checkOnMove(index, i, gameBoard, arrMap) {
             arrMap[i + index] = "1";
             arrMap[i] = "-";
             gameBoard.drawGameBoard(x);
-            // alert("You Win")
             win1 = true;
             win2 = true;
         } else {
@@ -75,6 +74,7 @@ function checkOnMove(index, i, gameBoard, arrMap) {
 // Hàm thực hiện thay đổi theo mảng RUN
 function makeChange(indexArrRun, i, gameBoard, arrMap) {
     if (arrRun[indexArrRun] === FORWARD) {
+        audio_jump.play();
         checkOnMove(index, i, gameBoard, arrMap);
     } else {
         if (arrRun[indexArrRun] === LEFT) {
@@ -105,7 +105,6 @@ function makeChange(indexArrRun, i, gameBoard, arrMap) {
             }
         }
     }
-    console.log(gameBoard.level)
 }
 
 //Hàm gọi thực hiện hàm makeChange.
@@ -128,8 +127,7 @@ function callFunction2(arrMap) {
         } else {
             if (win2) {
                 level++;
-                alert("You Win");
-
+                audio_win.play();
                 if (level <= GAME_LEVEL) {
                     gameBoard.level = eval("START_GAME" + (level + 1));
                     resetVariables();
@@ -142,6 +140,7 @@ function callFunction2(arrMap) {
                 }
 
             } else {
+                audio_lose.play();
                 alert("Đường thiếu rồi")
                 clearInterval(intervalId);
             }

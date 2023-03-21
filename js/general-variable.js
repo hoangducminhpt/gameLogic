@@ -19,6 +19,9 @@ var arrRun = [];
 var count = 0;
 
 var x = 100;
+var audio_jump = new Audio("jump3.wav");
+var audio_win = new Audio("win.wav");
+var audio_lose = new Audio("lose.mp3");
 
 const START_GAME1 = [
     '0', '0', '0', '0', '0', '0', '0', '0',
