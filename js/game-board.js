@@ -117,9 +117,10 @@ function callFunction(arrMap) {
 
 // Hàm gọi để check win, level
 function callFunction2(arrMap) {
+    console.log("arrMap");
+    console.log(arrMap);
     // thực hiện lọc mảng arrRun.
     arrRun = filterArrRun(arrRun);
-    console.log(arrRun);
 
     if (win1) {
         if (countRepeats < arrRun.length) {
@@ -137,6 +138,7 @@ function callFunction2(arrMap) {
                     clearInterval(intervalId);
                 } else {
                     clearInterval(intervalId);
+                    alert("Bạn đã chiến thắng trò chơi.")
                 }
 
             } else {
@@ -162,15 +164,15 @@ function runGame() {
     }, 450);
 }
 //
-// function resetGame() {
-//     clearWhenRun();
-//     resetVariables();
-//     // eval() biến chuỗi thành biến
-//     gameBoard.level = eval("START_GAME" + (level + 1));
-//     x = 100;
-//     gameBoard.drawGameBoard(x);
-//
-// }
+function resetGame() {
+    clearWhenRun();
+    resetVariables();
+    // eval() biến chuỗi thành biến
+    gameBoard.level = eval("START_GAME" + (level + 1));
+    x = 100;
+    gameBoard.drawGameBoard(x);
+
+}
 
 // Hàm làm trắng WHen Run
 function clearWhenRun() {
@@ -185,6 +187,7 @@ function clearWhenRun() {
 //Hàm reset biến.
 function resetVariables() {
     countRepeats = 0;
+    index = 8;
     win1 = true;
     win2 = false;
     arrRun = [];
