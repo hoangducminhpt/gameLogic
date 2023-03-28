@@ -64,7 +64,7 @@ function checkOnMove(index, i, gameBoard, arrMap) {
             win1 = true;
             win2 = true;
         } else {
-            alert("bạn đã sai")
+            // alert("bạn đã sai")
             win1 = false;
             win2 = false;
         }
@@ -144,6 +144,7 @@ function callFunction2(arrMap) {
             } else {
                 audio_lose.play();
                 alert("Đường thiếu rồi")
+                resetGame();
                 clearInterval(intervalId);
             }
         }
